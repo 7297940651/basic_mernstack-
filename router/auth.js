@@ -10,9 +10,7 @@ const router=express.Router()
 require('../db/conn')
 const User=require('../model/userSchema')
 
-router.get('/',(req,res)=>{
-    res.send("hello router")
-})
+
 
 router.post('/register',async(req,res)=>{
     const {name,email,phone,work,password,cpassword}=req.body
